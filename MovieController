@@ -1,7 +1,8 @@
 package taskinfocade;
 import java.util.Scanner;
 
-public class MovieController {
+public class MovieController
+{
     private MovieManager manager;
     private Scanner scanner;
 
@@ -17,14 +18,14 @@ public class MovieController {
     public void displayMenu() {
         while (true) {
         	System.out.println("**** wecome to movie*****");
-            System.out.println("1. Add Movie");
-            System.out.println("2. Clear Movies");
-            System.out.println("3. List Movies");
-            System.out.println("4. Add Movie by ID");
-            System.out.println("5. Load Movies");
-            System.out.println("6. Save Movies");
+            System.out.println("1: click 1 for Add Movie");
+            System.out.println("2.  click 2 for Clear Movies");
+            System.out.println("3. click 3 forList Movies");
+            System.out.println("4. click 4 Add Movie by ID");
+            System.out.println("5. click 5 Load Movies");
+            System.out.println("6. click 6 Save Movies");
             System.out.println("7. Exit");
-            System.out.print("Select an option: ");
+            System.out.print("****Select an option:**** ");
 
             int choice = scanner.nextInt();
             scanner.nextLine();
@@ -98,3 +99,4 @@ public class MovieController {
             System.out.println(movie);
         }
     }
+}
